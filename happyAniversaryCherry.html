@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Next Page Demo</title>
+  <style>
+    .page { display: none;
+    align-items: center;
+justify-content: center;
+margin: 10%; }
+    .active { display: block; }
+    button { margin-top: 20px; }
+    button {
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
+}
+.btnNext {
+ align-items: center;
+    justify-content: center;
+    display: flex;
+   margin: 20px auto;
+ }
+.shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: hsla(0, 82%, 37%, 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.front {
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+ font-size: 1.1rem;
+ color: white;
+ background: hsl(345deg 100% 47%);
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+ filter: brightness(110%);
+}
+
+button:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+button:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+ outline: none;
+}
+.page{
+    text-align: center;
+}
+.conImg{
+     display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+      gap: 10px; /* ช่องว่างระหว่างรูป */
+      max-width: 600px;
+      margin: auto;
+}
+.conImg img{
+   width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+}
+.txtf{
+  font-size: 35px;
+}
+.txtp{
+  font-size: 26px;
+ font-style: italic;
+ 
+  }
+ .conImg img:hover {
+      transform: scale(1.05); /* zoom in */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* shadow */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page1" class="page active">
+   <h1 class="txtf">hello cherry;D Happy Aniversary for 100 yearss 03/09/2025</h1>
+    <p class="txtp">ຂອບໃຈທີ່ຢູູ່ນຳກັນຈົນຮອດມື້ນີ້ເດີ້ ສາມປີປາຍແລ້ວທີ່ເພິ່ນຢູ່ນຳເຂົາ ຂອບໃຈທີ່ຢູ່ຈົນມາຮອດມື້ນີ້;D</p>
+  </div>
+  </div>
+
+  <div id="page2" class="page">
+    <h1>😫😍😘</h1>
+    <p class="txtp">ນີ້ແມ່ນຮູນທີ່ເພິ່ນຫນ້າຮັກມາກກກກກກເຂົາກາມັກ ສາມຮູມແມ່ນເຂົາຖ່າຍ ອີກອັນແມ່ນຮູ້ນທີ່ຫລົງຮັກເພິ່ນ</p>
+    <div class="conImg">
+        <img src="pic/WhatsApp Image 2025-08-16 at 13.25.50_7e14059a.jpg" alt="">
+        <img src="pic/WhatsApp Image 2025-08-16 at 13.25.54_73f78b87.jpg" alt="">
+        <img src="pic/WhatsApp Image 2025-08-16 at 13.25.51_04d22602.jpg" alt="">
+        <img src="pic/WhatsApp Image 2025-08-16 at 13.25.49_118b5a03.jpg" alt="">
+    </div>
+  </div>
+
+  <div id="page3" class="page">
+    <h1 class="txtf">To my honey</h1>
+    <p class="txtp">"ຕັ້ງແຕ່ວັນທີ່ເຂົາໄດ້ຮູ້ຈັກກັບເພິ່ນ ຊີວິດເຂົາກໍເຫມືອນມີແສງສະຫວ່າງເຂົ້າມາ ທຸກໆມື້ເຂົາມີຄວາມສຸກເພາະມີເພິ່ນຢູ່ໃນໃຈ ບໍ່ວ່າເວລາຈະຜ່ານໄປຫຼາຍປານໃດ ເຂົາກໍຍັງຢາກໃຫ້ເພິ່ນເປັນຄົນຂ້າງໆເຂົາເທື່ອ ເພາະວ່າໃຈເຂົາມີພື້ນທີ່ສໍາລັບເພິ່ນຄົນດຽວ ແລະມັນຈະບໍ່ເປັນຂອງໃຜເລີຍ."</p>
+  </div  class="btnNext">
+
+  <div id="page4" class="page">
+    <p class="txtp">ເພິ່ນຮູ້ບໍ... ຕັ້ງແຕ່ວັນທີ່ເຂົາໄດ້ພໍ່ມພາບກັບເພິ່ນ ຊີວິດເຂົາກໍຄືວ່າມີຄວາມຫມາຍຫຼາຍຂຶ້ນ ທຸກໆມື້ມັນເຕັມໄປດ້ວຍຄວາມຮູ້ສຶກດີ ແລະ ຮອຍຍິ້ມຂອງເພິ່ນ. ເຂົາບໍ່ເຄີຍຄິດວ່າຈະມີຄົນໜຶ່ງທີ່ເຮັດໃຫ້ໃຈເຂົາອ່ອນໂຍນ ແລະ ເຕັມໄປດ້ວຍຄວາມຮູ້ສຶກອົບອຸ່ນໄດ້ປານນີ້.
+
+ເວລາເຂົາເມື່ອຍ ຫຼື ເຈັບໃຈ ການຄິດເຖິງເພິ່ນກໍມີແຮງໃຈຂື້ນມາທັນທີ. ຄວາມຝັນຂອງເຂົາບໍ່ໃຫຍ່ຫຼາຍດອກ, ຂໍພຽງແຕ່ໄດ້ມີເພິ່ນຢູ່ຂ້າງໆກັນ, ໄດ້ເບິ່ງແຍງກັນ, ໄດ້ຢູ່ໃນທຸກໆຊ່ວງເວລາຂອງຊີວິດ.
+
+ເພິ່ນແມ່ນຄົນດຽວທີ່ເຂົາຢາກໃຫ້ຢູ່ໃນອະນາຄົດ ແລະ ເປັນຄວາມຈຳທີ່ງາມທີ່ສຸດໃນຊີວິດເຂົາ. ໃຈເຂົາມີພື້ນທີ່ສໍາລັບເພິ່ນຄົນດຽວ ແລະ ມັນຈະບໍ່ເປັນຂອງໃຜເລີຍ.</p>
+  </div>
+  <div id="page5" class="page"> 
+    <h1 class="txtf">ຈົບການບັນຍາຍ ຄ້ານເຮັດຕໍ່ລະປວດຫລັງ</h1>
+    <h3> Thak you my user >< </h3>
+    <img src="https://media.tenor.com/lE2c8p1XJfYAAAAS/mua-kiss.gif" alt="">
+
+    
+  </div>
+<button onclick="nextPage()" class="btnNext">
+  <span class="shadow"class="btnNext"></span>
+  <span class="edge"></span>
+  <span class="front text"> Click me
+  </span>
+</button>
+  <script>
+    let currentPage = 1;
+    const totalPages = 5;
+
+    function showPage(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page' + page).classList.add('active');
+    }
+
+    function nextPage() {
+      currentPage++;
+      if (currentPage > totalPages) {
+        currentPage = 1; // วนกลับไปหน้าแรก
+      }
+      showPage(currentPage);
+    }
+  </script>
+
+</body>
+</html>
